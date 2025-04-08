@@ -16,3 +16,61 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+
+
+
+
+#datetime-picker {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #3f51b5;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  width: 240px;
+  box-sizing: border-box;
+}
+
+button[data-start] {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: 2px solid #3f51b5;
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[data-start]:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
